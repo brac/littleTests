@@ -19,6 +19,8 @@ Build a little app with a couple of routes and a couple of functions. Test these
 ####Install
 - Express
 - Body Parser
+* Mocha
+* Chai
 * Stryker
 
 ####Build

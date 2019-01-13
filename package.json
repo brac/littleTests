@@ -4,7 +4,10 @@
   "description": "will jenkins drink some mocah? let's find out",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
+    "test": "NODE_ENV=test mocha ./test/*_test.js",
+    "test:app": "NODE_ENV=test mocha ./test/app_test.js --exit"
   },
   "author": "brac",
   "license": "MIT",
@@ -13,6 +16,9 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
-    "nodemon": "^1.18.9"
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "nyc": "^13.1.0"
   }
 }

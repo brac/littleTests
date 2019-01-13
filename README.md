@@ -8,27 +8,27 @@ We want to determine how feasible it is to deploy an express node app to Jenkins
 Build a little app with a couple of routes and a couple of functions. Test these functions with mocha and chai, be sure to include an async test. 
 
 ###Things to include
-* Testing scripts
+- Testing scripts
 * Unit Tests
-* Couple of Routes
+- Couple of Routes
 
 ###The Plan
 ####Configure
-* WebStorm Add Configuration
+- WebStorm Add Configuration
 
 ####Install
 - Express
 - Body Parser
-* Mocha
-* Chai
+- Mocha
+- Chai
 * Stryker
 
 ####Build
 * file structure
-* landing page
-    * '/'
-* alternate route
-    * '/cats'
+- landing page
+    - '/'
+- alternate route
+    - '/tests'
 * 1 function
     * concating a string
 * 1 async function

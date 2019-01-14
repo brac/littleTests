@@ -4,7 +4,7 @@ const concatStrings = (str1, str2) => {
 }
 
 const squareNumber = (num) => {
-  if (num === undefined) throw new Error('Please provide a number')
+  if (num === undefined || typeof num != 'number') throw new Error('Please provide a number')
   return num * num
 }
 

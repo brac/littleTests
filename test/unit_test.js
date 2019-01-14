@@ -1,5 +1,6 @@
 const chai              = require('chai')
 const expect            = chai.expect
+const itParam           = require('mocha-param');
 const { concatStrings,
         squareNumber
                       } = require('../public/javascripts/bitEngine.js')
@@ -27,6 +28,13 @@ describe('Unit Tests for bitEngine', function() {
       expected = 16
       result = squareNumber(4)
       expect(result).to.equal(expected)
+    })
+
+    it('returns a number', function() {
+      let value
+      itParam(`return value ${value} is a number`, [2, 'f', 6], function (value) {
+        expect(value).to.be.a('number');
+      })
     })
 
     it('throws an error if no number is provided', function() {
